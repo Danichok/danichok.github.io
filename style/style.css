@@ -1,0 +1,251 @@
+        /* SETTINGS */
+        
+        body {
+            background: white;
+            color: white;
+            overflow-x: hidden;
+        }
+        
+        * {
+            font-family: 'Raleway', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+        /* SETTINGS END */
+        /* MENU */
+        
+        .header_menu {
+            position: fixed;
+            color: white;
+            width: 15vw;
+            height: 100vh;
+            z-index: 999;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: #171717;
+        }
+        
+        .menu_body {
+            text-align: center;
+            width: 180px;
+            margin: 0 auto;
+        }
+        
+        .menu_body img {
+            margin-top: 40px;
+            width: 170px;
+            height: 100px;
+            margin-bottom: 25px;
+        }
+        
+        .menu_body a {
+            line-height: 140px;
+            color: white;
+            font-weight: 900;
+            font-size: 30px;
+        }
+        
+        .menu_body a:hover {
+            color: #00FFD8;
+        }
+        
+        .menu_contacts {
+            width: 100px;
+            padding-top: 50px;
+            display: flex;
+            justify-content: space-between;
+            margin: 0 auto;
+        }
+        
+        .menu_contacts img {
+            width: 20px;
+            height: 20px;
+        }
+        
+        .menu_contacts_icons {
+            cursor: pointer;
+        }
+        
+        .menu_body div {
+            text-align: center;
+        }
+        
+        .scroll_menu {
+            position: fixed;
+            width: 1.5vw;
+            height: 100vh;
+            z-index: 999;
+            top: 0;
+            left: 17%;
+            background: #171717;
+        }
+        
+        .scroll_menu_point {
+            width: 100%;
+            background: #00FFD8;
+            height: 20px;
+            margin-top: 225px;
+            transition: 0.7s;
+            transition-timing-function: cubic-bezier(1, 0.01, 0.31, 0.98);
+        }
+        /* MENU END*/
+        
+        .main {
+            background-image: url(/img/header_photo.png);
+            background-size: cover;
+            width: 100%;
+            height: 100vh;
+        }
+        
+        .main_contents {
+            margin-left: 400px;
+            padding-top: 600px;
+        }
+        
+        .main_contents h1 {
+            font-weight: 900;
+            font-size: 64px;
+        }
+        
+        .main_contents h2 {
+            font-weight: 900;
+            font-size: 64px;
+        }
+        
+        .main_contents h1 span {
+            color: #00FFD8;
+        }
+        
+        .main_contents h2 span {
+            font-weight: 300;
+        }
+        
+        .main_contents p {
+            opacity: 0.7;
+        }
+        
+        .about {
+            background-image: url(/img/about_photo.png);
+            background-size: cover;
+            width: 100%;
+            height: 100vh;
+        }
+        
+        .main_block {
+            overflow: hidden;
+        }
+        
+        .main_block_wrapper {
+            transition: 0.7s;
+            transition-timing-function: cubic-bezier(1, 0.01, 0.31, 0.98);
+        }
+        
+        body {
+            overflow-y: hidden;
+        }
+        
+        .examples {
+            background-image: url(/img/examples_photo.png);
+            background-size: cover;
+            width: 100%;
+            height: 100vh;
+            position: relative;
+            padding-top: 100px;
+        }
+        
+        .contacts {
+            background-image: url(/img/contacts_photo.png);
+            background-size: cover;
+            width: 100%;
+            height: 100vh;
+        }
+        
+        .scroll_menu_container {
+            height: 500px;
+        }
+        
+        .skils_contents {
+            display: flex;
+            width: 70vw;
+            margin: 0 auto;
+            margin-left: 400px;
+            padding-top: 100px;
+        }
+        
+        .skils {
+            margin: 0 auto;
+            width: 350px;
+            text-align: center;
+        }
+        
+        .skils hr {
+            width: 6px;
+            height: 72px;
+            background: #00FFD8;
+            border: none;
+            margin: 0 auto;
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+        
+        .skils_header {
+            width: 372px;
+            height: 68px;
+            background: #00FFD8;
+            font-weight: bold;
+            font-size: 36px;
+            color: black;
+            padding-top: 10px;
+        }
+        
+        .skils_body {
+            font-weight: bold;
+            font-size: 36px;
+        }
+        
+        .slider_block {
+            width: 1216px;
+            height: 753px;
+            background-color: #00FFD8;
+            margin-left: 27%;
+            position: relative;
+            z-index: 2;
+            overflow: hidden;
+        }
+        
+        .slider_button {
+            position: absolute;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            top: 38%;
+            z-index: 3;
+        }
+        
+        .slider_button_left {
+            position: absolute;
+            left: -89px;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+        
+        .slider_button_right {
+            right: -89px;
+            position: absolute;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+        
+        .slider_wrapper {
+            display: flex;
+            width: 100%;
+            transition: 0.3s;
+        }
+        
+        .slider_wrapper img {
+            width: 1216px;
+            height: 753px;
+        }
