@@ -130,16 +130,19 @@ function sliderLeft() {
     }
 
 }
-/*$(document).ready(function() {
-    $("a").on('click', function(event) {
-        if (this.hash !== "") {
-            event.preventDefault();
-            var hash = this.hash;
-            $('html, body').animate({
-                scrollTop: $(hash).offset().top
-            }, 800, function() {
-                window.location.hash = hash;
-            });
-        }
-    });
-});*/
+$('#home_menu').click(function() {
+    $('.main_block_wrapper').attr('style', 'transform:translateY(-' + 0 + 'vh)')
+    $('.scroll_menu_point').attr('style', 'transform: translateY(0%);');
+})
+$('#about_menu').click(function() {
+    $('.main_block_wrapper').attr('style', 'transform:translateY(-' + 100 + 'vh)')
+    $('.scroll_menu_point').attr('style', 'transform: translateY(700%);');
+})
+$('#examples_menu').click(function() {
+    $('.main_block_wrapper').attr('style', 'transform:translateY(-' + 200 + 'vh)')
+    $('.scroll_menu_point').attr('style', 'transform: translateY(1400%);');
+})
+$('#contacts_menu').click(function() {
+    $('.main_block_wrapper').attr('style', 'transform:translateY(-' + 300 + 'vh)')
+    $('.scroll_menu_point').attr('style', 'transform: translateY(2100%);');
+})
