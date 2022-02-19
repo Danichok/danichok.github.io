@@ -7,20 +7,44 @@ $('.menu_contacts_icons').hover(function() {
 var isActive = true
 var sliderCount = 0;
 var currentSlide = 0;
+var screen = $('body').width()
 window.addEventListener("mousewheel", function(e) {
     wDelta = e.wheelDelta < 0 ? 'down' : 'up';
-    if (isActive == true) {
-        if (wDelta == 'down') {
-            scrollDown()
+    if (screen > 1024) {
+        if (isActive == true) {
+            if (wDelta == 'down') {
+                scrollDown()
 
+            } else {
+                scrollUp()
+            }
         } else {
-            scrollUp()
+            return false;
         }
-    } else {
-        return false;
     }
-}, { passive: false });
 
+}, { passive: false });
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+
+
+
+    // If we need pagination
+    pagination: {
+        el: '.swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+        el: '.swiper-scrollbar',
+    },
+});
 
 function scrollDown() {
     currentSlide = currentSlide + 1;
@@ -46,7 +70,7 @@ function scrollDown() {
     isActive = false;
     setTimeout(() => {
         isActive = true;
-    }, 1000);
+    }, 800);
 }
 
 function scrollUp() {
@@ -75,7 +99,7 @@ function scrollUp() {
     isActive = false;
     setTimeout(() => {
         isActive = true;
-    }, 1000);
+    }, 800);
 
 }
 
