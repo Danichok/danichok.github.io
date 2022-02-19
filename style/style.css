@@ -102,7 +102,7 @@
         }
         
         .main_contents {
-            margin-left: 400px;
+            margin-left: 22%;
             padding-top: 600px;
         }
         
@@ -172,7 +172,7 @@
             display: flex;
             width: 70vw;
             margin: 0 auto;
-            margin-left: 400px;
+            margin-left: 20%;
             padding-top: 100px;
         }
         
@@ -262,4 +262,33 @@
         
         .contacts_block {
             padding-top: 20px;
+        }
+        
+        .slider_container {
+            width: 1300px;
+            margin-left: 23%;
+        }
+        
+        @media (max-width: 1240px) {
+            .header_menu {
+                display: none;
+            }
+            .scroll_menu {
+                display: none;
+            }
+            .skils_contents {
+                margin-left: 14%;
+            }
+            .slider_block {
+                margin-left: 16%;
+            }
+            .contacts_body {
+                margin-left: -20%;
+            }
+        }
+        
+        @media (max-width: 1024px) {
+            body {
+                overflow-y: scroll;
+            }
         }

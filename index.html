@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -74,18 +75,33 @@
                 </div>
             </section>
             <section class="examples" id="examples">
-                <div class="slider_block">
-                    <div class="slider_button">
-                        <img class="slider_button_left" style="transform: rotate(0turn);" src="img/slider_hover_left.svg" alt="slider_hover">
-                        <img class="slider_button_right" style="transform: rotate(0turn);" src="img/slider_hover_right.svg" alt="slider_hover">
-                    </div>
-                    <div class="slider">
-                        <div class="slider_wrapper">
-                            <a target="_blank" href="https://danichok.github.io/CloudHost/"><img class="slider_wrapper_photo" src="img/examples1.png" alt=""></a>
-                            <a target="_blank" href="https://danichok.github.io/KattenRadar-page-/"><img class="slider_wrapper_photo" src="img/examples2.png" alt=""></a>
+
+
+                <div class="slider_container">
+                    <!-- Slider main container -->
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <a target="_blank" href="https://danichok.github.io/CloudHost/"><img class="slider_wrapper_photo" src="img/examples1.png" alt=""></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a target="_blank" href="https://danichok.github.io/KattenRadar-page-/"><img class="slider_wrapper_photo" src="img/examples2.png" alt=""></a>
+                            </div>
                         </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+
+                        <!-- If we need scrollbar -->
+                        <div class="swiper-scrollbar"></div>
                     </div>
                 </div>
+
 
             </section>
             <section class="contacts" id="contacts">
@@ -106,6 +122,7 @@
 
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js " integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin=" anonymous "></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/main.js "></script>
 </body>
 
