@@ -408,7 +408,7 @@
         
         @media (max-width: 420px) {
             .skils_contents {
-                margin-left: 5%;
+                margin-left: 0%;
             }
             .contacts_block_tel {
                 margin: 0 auto;
