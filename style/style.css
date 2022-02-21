@@ -423,4 +423,13 @@
                 font-weight: 900;
                 font-size: 55px;
             }
+            .about {
+                height: 1000px;
+            }
+            .examples {
+                height: 900px;
+            }
+            .contacts {
+                height: 900px;
+            }
         }
