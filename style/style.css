@@ -316,13 +316,11 @@
             }
             .slider_wrapper_photo {
                 width: 100%;
-                height: 700px;
+                height: 600px;
             }
             .slider_container {
-                width: 100%;
-            }
-            .slider_container {
-                margin-left: 0%;
+                width: 90%;
+                margin: 0 auto;
             }
         }
         
@@ -349,6 +347,15 @@
                 margin-left: 12%;
                 padding-top: 400px;
             }
+            .slider_wrapper_photo {
+                width: 100%;
+                height: 500px;
+            }
+            .slider_container {
+                width: 90%;
+                margin: 0 auto;
+                margin-top: 10%;
+            }
         }
         
         @media (max-width: 450px) {
@@ -359,6 +366,8 @@
             .skils_contents {
                 display: block;
                 padding-top: 60px;
+                margin: 0 auto;
+                margin-left: 10%;
             }
             .skils hr {
                 height: 0px;
@@ -370,36 +379,40 @@
                 margin-left: 10%;
                 padding-top: 320px;
             }
-            .skils_contents {
-                margin-left: 10%;
-            }
             .contacts_block {
                 margin-left: 0%;
             }
             .contacts_block_tel {
                 margin: 0 auto;
-                width: 335px;
+                width: 380px;
                 margin-top: 40px;
             }
             .contacts_block_up {
                 margin: 0 auto;
-                width: 120px;
+                width: 160px;
                 margin-top: 40px;
             }
             .contacts_block_git {
                 margin: 0 auto;
-                width: 180px;
+                width: 210px;
                 margin-top: 40px;
+            }
+            .slider_wrapper_photo {
+                width: 100%;
+                height: 250px;
+            }
+            .examples {
+                height: 500px;
             }
         }
         
         @media (max-width: 420px) {
             .skils_contents {
-                margin-left: 0%;
+                margin-left: 5%;
             }
             .contacts_block_tel {
                 margin: 0 auto;
-                width: 425px;
+                width: 360px;
                 margin-top: 40px;
             }
             .contacts_block_up {
@@ -427,7 +440,7 @@
                 height: 1000px;
             }
             .examples {
-                height: 900px;
+                height: 500px;
             }
             .contacts {
                 height: 900px;
