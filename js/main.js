@@ -45,6 +45,56 @@ const swiper = new Swiper('.swiper', {
         el: '.swiper-scrollbar',
     },
 });
+$('.slider_button_left').click(function() {
+    var currentRotate = $('.slider_button_left').attr('style')
+    console.log(currentRotate)
+    if (currentRotate == 'transform: rotate(1turn);') {
+        $('.slider_button_left').attr('style', 'transform: rotate(0turn);')
+    } else {
+        $('.slider_button_left').attr('style', 'transform: rotate(1turn);')
+    }
+    sliderLeft()
+})
+$('.slider_button_right').click(function() {
+    var currentRotate = $('.slider_button_right').attr('style')
+    console.log(currentRotate)
+    if (currentRotate == 'transform: rotate(1turn);') {
+        $('.slider_button_right').attr('style', 'transform: rotate(0turn);')
+    } else {
+        $('.slider_button_right').attr('style', 'transform: rotate(1turn);')
+    }
+    sliderRight()
+})
+var sliderNumber = $('.slider_wrapper_photo').length // Визначення кількості слайдів
+var sliderWidth = $('.slider_wrapper_photo').width() // Ширина  слайда
+var sliderCount = 1
+
+function sliderRight() {
+    sliderCount++ // +1 до щьотчика слайда
+    console.log(sliderCount)
+    if (sliderCount > sliderNumber) {
+        sliderCount = sliderNumber
+        return false
+    } else {
+        var translateWidth = sliderWidth * (sliderCount - 1) // Ширина прокрута
+        $('.slider_wrapper').attr('style', 'transform:translateX(-' + translateWidth + 'px)')
+    }
+}
+
+function sliderLeft() {
+    sliderCount-- // +1 до щьотчика слайда
+    console.log(sliderCount)
+    if (sliderCount < 1) {
+        sliderCount = 1
+        var translateWidth = 0 // Ширина прокрута
+        $('.slider_wrapper').attr('style', 'transform:translateX(-' + translateWidth + 'px)')
+        return false
+    } else {
+        //alert('SCAm')
+        var translateWidth = sliderWidth * (sliderCount - 1) // Ширина прокрута
+        $('.slider_wrapper').attr('style', 'transform:translateX(-' + translateWidth + 'px)')
+    }
+}
 
 function scrollDown() {
     currentSlide = currentSlide + 1;
