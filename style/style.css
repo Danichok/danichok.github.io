@@ -1,448 +1,520 @@
-        /* SETTINGS */
-        
-        body {
-            background: white;
-            color: white;
-            overflow-x: hidden;
-        }
-        
-        * {
-            font-family: 'Raleway', sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            text-decoration: none;
-        }
-        /* SETTINGS END */
-        /* MENU */
-        
-        .header_menu {
-            position: fixed;
-            color: white;
-            width: 15vw;
-            height: 100vh;
-            z-index: 999;
-            position: fixed;
-            top: 0;
-            left: 0;
-            background: #171717;
-        }
-        
-        .menu_body {
-            text-align: center;
-            width: 180px;
-            margin: 0 auto;
-        }
-        
-        .menu_body img {
-            margin-top: 40px;
-            width: 170px;
-            height: 100px;
-            margin-bottom: 25px;
-        }
-        
-        .menu_body p {
-            line-height: 140px;
-            color: white;
-            font-weight: 900;
-            font-size: 30px;
-            cursor: pointer;
-        }
-        
-        .menu_body p:hover {
-            color: #00FFD8;
-        }
-        
-        .menu_contacts {
-            width: 100px;
-            padding-top: 50px;
-            display: flex;
-            justify-content: space-between;
-            margin: 0 auto;
-        }
-        
-        .menu_contacts img {
-            width: 20px;
-            height: 20px;
-        }
-        
-        .menu_contacts_icons {
-            cursor: pointer;
-        }
-        
-        .menu_body div {
-            text-align: center;
-        }
-        
-        .scroll_menu {
-            position: fixed;
-            width: 1.5vw;
-            height: 100vh;
-            z-index: 999;
-            top: 0;
-            left: 17%;
-            background: #171717;
-        }
-        
-        .scroll_menu_point {
-            width: 100%;
-            background: #00FFD8;
-            height: 20px;
-            margin-top: 225px;
-            transition: 0.7s;
-            transition-timing-function: cubic-bezier(1, 0.01, 0.31, 0.98);
-        }
-        /* MENU END*/
-        
-        .main {
-            background-image: url(/img/header_photo.png);
-            background-size: cover;
-            width: 100%;
-            height: 100vh;
-        }
-        
-        .main_contents {
-            margin-left: 22%;
-            padding-top: 600px;
-        }
-        
-        .main_contents h1 {
-            font-weight: 900;
-            font-size: 64px;
-        }
-        
-        .main_contents h2 {
-            font-weight: 900;
-            font-size: 64px;
-        }
-        
-        .main_contents h1 span {
-            color: #00FFD8;
-        }
-        
-        .main_contents h2 span {
-            font-weight: 300;
-        }
-        
-        .main_contents p {
-            opacity: 0.7;
-        }
-        
-        .about {
-            background-image: url(/img/about_photo.png);
-            background-size: cover;
-            width: 100%;
-            height: 100vh;
-        }
-        
-        .main_block {
-            overflow: hidden;
-        }
-        
-        .main_block_wrapper {
-            transition: 0.7s;
-            transition-timing-function: cubic-bezier(1, 0.01, 0.31, 0.98);
-        }
-        
-        body {
-            overflow-y: hidden;
-        }
-        
-        .examples {
-            background-image: url(/img/examples_photo.png);
-            background-size: cover;
-            width: 100%;
-            height: 100vh;
-            position: relative;
-            padding-top: 100px;
-        }
-        
-        .contacts {
-            background-color: #282828;
-            background-size: cover;
-            width: 100%;
-            height: 100vh;
-        }
-        
-        .scroll_menu_container {
-            height: 500px;
-        }
-        
-        .skils_contents {
-            display: flex;
-            width: 70vw;
-            margin: 0 auto;
-            margin-left: 20%;
-            padding-top: 100px;
-        }
-        
-        .skils {
-            margin: 0 auto;
-            width: 350px;
-            text-align: center;
-        }
-        
-        .skils hr {
-            width: 6px;
-            height: 72px;
-            background: #00FFD8;
-            border: none;
-            margin: 0 auto;
-            margin-top: 25px;
-            margin-bottom: 25px;
-        }
-        
-        .skils_header {
-            width: 372px;
-            height: 68px;
-            background: #00FFD8;
-            font-weight: bold;
-            font-size: 36px;
-            color: black;
-            padding-top: 10px;
-        }
-        
-        .skils_body {
-            font-weight: bold;
-            font-size: 36px;
-        }
-        
-        .slider_block {
-            width: 69%;
-            height: 73vh;
-            background-color: #00FFD8;
-            margin-left: 25%;
-            position: relative;
-            z-index: 2;
-            overflow: hidden;
-        }
-        
-        .slider_button {
-            position: absolute;
-            display: flex;
-            justify-content: space-between;
-            width: 100%;
-            top: 38%;
-            z-index: 3;
-        }
-        
-        .slider_button_left {
-            position: absolute;
-            left: -89px;
-            cursor: pointer;
-            transition: 0.5s;
-        }
-        
-        .slider_button_right {
-            right: -89px;
-            position: absolute;
-            cursor: pointer;
-            transition: 0.5s;
-        }
-        
-        .slider_wrapper {
-            display: flex;
-            width: 100%;
-            transition: 0.3s;
-        }
-        
-        .slider_wrapper img {
-            width: 1330px;
-            min-width: 100%;
-            height: 73vh;
-        }
-        
-        .slider_wrapper a {
-            width: 100%;
-        }
-        
-        .contacts_body {
-            padding-top: 30px;
-        }
-        
-        .contacts_block {
-            padding-top: 20px;
-        }
-        
-        .slider_container {
-            max-width: 1300px;
-            width: 80%;
-            margin-left: 25%;
-        }
-        
-        .contacts_block_tel {
-            margin-left: 40%;
-        }
-        
-        .contacts_block_up {
-            margin-left: 70%;
-        }
-        
-        .contacts_block_git {
-            margin-left: 30%;
-        }
-        
-        @media (max-width: 1240px) {
-            .header_menu {
-                display: none;
-            }
-            .scroll_menu {
-                display: none;
-            }
-            .skils_contents {
-                margin-left: 14%;
-            }
-            .slider_block {
-                margin-left: 16%;
-            }
-            .contacts_body {
-                margin-left: -20%;
-            }
-        }
-        
-        @media (max-width: 1240px) {
-            body {
-                overflow-y: scroll;
-            }
-            .skils_contents {
-                display: block;
-                padding-top: 60px;
-            }
-            .skils hr {
-                height: 0px;
-            }
-            .skils_body {
-                margin-bottom: 30px;
-            }
-            .slider_wrapper_photo {
-                width: 100%;
-                height: 600px;
-            }
-            .slider_container {
-                width: 90%;
-                margin: 0 auto;
-            }
-        }
-        
-        @media (max-width: 980px) {
-            .contacts_block_tel {
-                margin: 0 auto;
-                width: 280px;
-                margin-top: 40px;
-            }
-            .contacts_block_up {
-                margin: 0 auto;
-                width: 62px;
-                margin-top: 40px;
-            }
-            .contacts_block_git {
-                margin: 0 auto;
-                width: 115px;
-                margin-top: 40px;
-            }
-        }
-        
-        @media (max-width: 680px) {
-            .main_contents {
-                margin-left: 12%;
-                padding-top: 400px;
-            }
-            .slider_wrapper_photo {
-                width: 100%;
-                height: 500px;
-            }
-            .slider_container {
-                width: 90%;
-                margin: 0 auto;
-                margin-top: 10%;
-            }
-        }
-        
-        @media (max-width: 450px) {
-            .main_contents {
-                margin-left: 12%;
-                padding-top: 350px;
-            }
-            .skils_contents {
-                display: block;
-                padding-top: 60px;
-                margin: 0 auto;
-                margin-left: 10%;
-            }
-            .skils hr {
-                height: 0px;
-            }
-            .skils_body {
-                margin-bottom: 30px;
-            }
-            .main_contents {
-                margin-left: 10%;
-                padding-top: 320px;
-            }
-            .contacts_block {
-                margin-left: 0%;
-            }
-            .contacts_block_tel {
-                margin: 0 auto;
-                width: 380px;
-                margin-top: 40px;
-            }
-            .contacts_block_up {
-                margin: 0 auto;
-                width: 160px;
-                margin-top: 40px;
-            }
-            .contacts_block_git {
-                margin: 0 auto;
-                width: 210px;
-                margin-top: 40px;
-            }
-            .slider_wrapper_photo {
-                width: 100%;
-                height: 250px;
-            }
-            .examples {
-                height: 500px;
-            }
-        }
-        
-        @media (max-width: 420px) {
-            .skils_contents {
-                margin-left: 0%;
-            }
-            .contacts_block_tel {
-                margin: 0 auto;
-                width: 360px;
-                margin-top: 40px;
-            }
-            .contacts_block_up {
-                margin: 0 auto;
-                width: 220px;
-                margin-top: 40px;
-            }
-            .contacts_block_git {
-                margin: 0 auto;
-                width: 260px;
-                margin-top: 40px;
-            }
-            .main_contents {
-                margin-left: 5%;
-            }
-            .main_contents h1 {
-                font-weight: 900;
-                font-size: 55px;
-            }
-            .main_contents h2 {
-                font-weight: 900;
-                font-size: 55px;
-            }
-            .about {
-                height: 1000px;
-            }
-            .examples {
-                height: 500px;
-            }
-            .contacts {
-                height: 900px;
-            }
-        }
+ /* SETTINGS */
+ 
+ body {
+     background: white;
+     color: white;
+     overflow-x: hidden;
+ }
+ 
+ * {
+     font-family: 'Raleway', sans-serif;
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     text-decoration: none;
+ }
+ /* SETTINGS END */
+ /* MENU */
+ 
+ .header_menu {
+     position: fixed;
+     color: white;
+     width: 15vw;
+     height: 100vh;
+     z-index: 999;
+     position: fixed;
+     top: 0;
+     left: 0;
+     background: #171717;
+ }
+ 
+ .menu_body {
+     text-align: center;
+     width: 180px;
+     margin: 0 auto;
+ }
+ 
+ .menu_body img {
+     margin-top: 40px;
+     width: 170px;
+     height: 100px;
+     margin-bottom: 25px;
+ }
+ 
+ .menu_body p {
+     line-height: 140px;
+     color: white;
+     font-weight: 900;
+     font-size: 30px;
+     cursor: pointer;
+ }
+ 
+ .menu_body p:hover {
+     color: #00FFD8;
+ }
+ 
+ .menu_contacts {
+     width: 100px;
+     padding-top: 50px;
+     display: flex;
+     justify-content: space-between;
+     margin: 0 auto;
+ }
+ 
+ .menu_contacts img {
+     width: 20px;
+     height: 20px;
+ }
+ 
+ .menu_contacts_icons {
+     cursor: pointer;
+ }
+ 
+ .menu_body div {
+     text-align: center;
+ }
+ 
+ .scroll_menu {
+     position: fixed;
+     width: 1.5vw;
+     height: 100vh;
+     z-index: 999;
+     top: 0;
+     left: 17%;
+     background: #171717;
+ }
+ 
+ .scroll_menu_point {
+     width: 100%;
+     background: #00FFD8;
+     height: 20px;
+     margin-top: 225px;
+     transition: 0.7s;
+     transition-timing-function: cubic-bezier(1, 0.01, 0.31, 0.98);
+ }
+ /* MENU END*/
+ 
+ .main {
+     background-image: url(/img/header_photo.png);
+     background-size: cover;
+     width: 100%;
+     height: 100vh;
+ }
+ 
+ .main_contents {
+     margin-left: 22%;
+     padding-top: 600px;
+ }
+ 
+ .main_contents h1 {
+     font-weight: 900;
+     font-size: 64px;
+ }
+ 
+ .main_contents h2 {
+     font-weight: 900;
+     font-size: 64px;
+ }
+ 
+ .main_contents h1 span {
+     color: #00FFD8;
+ }
+ 
+ .main_contents h2 span {
+     font-weight: 300;
+ }
+ 
+ .main_contents p {
+     opacity: 0.7;
+ }
+ 
+ .about {
+     background-image: url(/img/about_photo.png);
+     background-size: cover;
+     width: 100%;
+     height: 100vh;
+ }
+ 
+ .main_block {
+     overflow: hidden;
+ }
+ 
+ .main_block_wrapper {
+     transition: 0.7s;
+     transition-timing-function: cubic-bezier(1, 0.01, 0.31, 0.98);
+ }
+ 
+ body {
+     overflow-y: hidden;
+ }
+ 
+ .examples {
+     background-image: url(/img/examples_photo.png);
+     background-size: cover;
+     width: 100%;
+     height: 100vh;
+     position: relative;
+     padding-top: 100px;
+ }
+ 
+ .contacts {
+     background-color: #282828;
+     background-size: cover;
+     width: 100%;
+     height: 100vh;
+ }
+ 
+ .scroll_menu_container {
+     height: 500px;
+ }
+ 
+ .skils_contents {
+     display: flex;
+     width: 70vw;
+     margin: 0 auto;
+     margin-left: 20%;
+     padding-top: 100px;
+ }
+ 
+ .skils {
+     margin: 0 auto;
+     width: 350px;
+     text-align: center;
+ }
+ 
+ .skils hr {
+     width: 6px;
+     height: 72px;
+     background: #00FFD8;
+     border: none;
+     margin: 0 auto;
+     margin-top: 25px;
+     margin-bottom: 25px;
+ }
+ 
+ .skils_header {
+     width: 372px;
+     height: 68px;
+     background: #00FFD8;
+     font-weight: bold;
+     font-size: 36px;
+     color: black;
+     padding-top: 10px;
+ }
+ 
+ .skils_body {
+     font-weight: bold;
+     font-size: 36px;
+ }
+ 
+ .slider_block {
+     width: 69%;
+     height: 73vh;
+     background-color: #00FFD8;
+     margin-left: 25%;
+     position: relative;
+     z-index: 2;
+     overflow: hidden;
+ }
+ 
+ .slider_button {
+     position: absolute;
+     display: flex;
+     justify-content: space-between;
+     width: 100%;
+     top: 38%;
+     z-index: 3;
+ }
+ 
+ .slider_button_left {
+     position: absolute;
+     left: -89px;
+     cursor: pointer;
+     transition: 0.5s;
+ }
+ 
+ .slider_button_right {
+     right: -89px;
+     position: absolute;
+     cursor: pointer;
+     transition: 0.5s;
+ }
+ 
+ .slider_wrapper {
+     display: flex;
+     width: 100%;
+     transition: 0.3s;
+ }
+ 
+ .slider_wrapper img {
+     width: 1330px;
+     min-width: 100%;
+     height: 73vh;
+ }
+ 
+ .slider_wrapper a {
+     width: 100%;
+ }
+ 
+ .contacts_body {
+     padding-top: 30px;
+ }
+ 
+ .contacts_block {
+     padding-top: 20px;
+ }
+ 
+ .slider_container {
+     max-width: 1300px;
+     width: 80%;
+     margin-left: 25%;
+ }
+ 
+ .contacts_block_tel {
+     margin-left: 40%;
+ }
+ 
+ .contacts_block_up {
+     margin-left: 70%;
+ }
+ 
+ .contacts_block_git {
+     margin-left: 30%;
+ }
+ 
+ .swiper-button-next.swiper-button-disabled,
+ .swiper-button-prev.swiper-button-disabled {
+     color: #00FFD8 !important;
+ }
+ 
+ .swiper-button-next,
+ .swiper-rtl .swiper-button-prev {
+     color: #00FFD8 !important;
+ }
+ 
+ .swiper-button-next.swiper-button-disabled,
+ .swiper-button-prev.swiper-button-disabled {
+     opacity: .35;
+     cursor: auto;
+     pointer-events: none;
+     background-color: #171717;
+     width: 70px;
+     height: 70px;
+     border-radius: 100%;
+     color: #00FFD8 !important;
+ }
+ 
+ .swiper-button-prev,
+ .swiper-rtl .swiper-button-next {
+     left: 10px;
+     right: auto;
+     background-color: #171717;
+     width: 70px;
+     height: 70px;
+     color: #00FFD8 !important;
+ }
+ 
+ .swiper-button-next,
+ .swiper-button-prev {
+     background-color: #171717;
+     width: 70px !important;
+     height: 70px !important;
+     border-radius: 100%;
+     color: #00FFD8 !important;
+ }
+ 
+ .swiper-button-next:after,
+ .swiper-rtl .swiper-button-prev:after {
+     padding-left: 7px;
+ }
+ 
+ .swiper-button-prev:after,
+ .swiper-rtl .swiper-button-next:after {
+     padding-right: 7px;
+ }
+ 
+ .swiper-button-next:after,
+ .swiper-button-prev:after {
+     font-size: 28px !important;
+ }
+ 
+ .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+ .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+     background: #00FFD8 !important;
+ }
+ 
+ @media (max-width: 1240px) {
+     .header_menu {
+         display: none;
+     }
+     .scroll_menu {
+         display: none;
+     }
+     .skils_contents {
+         margin-left: 14%;
+     }
+     .slider_block {
+         margin-left: 16%;
+     }
+     .contacts_body {
+         margin-left: -20%;
+     }
+ }
+ 
+ @media (max-width: 1240px) {
+     body {
+         overflow-y: scroll;
+     }
+     .skils_contents {
+         display: block;
+         padding-top: 60px;
+     }
+     .skils hr {
+         height: 0px;
+     }
+     .skils_body {
+         margin-bottom: 30px;
+     }
+     .slider_wrapper_photo {
+         width: 100%;
+         height: 600px;
+     }
+     .slider_container {
+         width: 90%;
+         margin: 0 auto;
+     }
+ }
+ 
+ @media (max-width: 980px) {
+     .contacts_block_tel {
+         margin: 0 auto;
+         width: 280px;
+         margin-top: 40px;
+     }
+     .contacts_block_up {
+         margin: 0 auto;
+         width: 62px;
+         margin-top: 40px;
+     }
+     .contacts_block_git {
+         margin: 0 auto;
+         width: 115px;
+         margin-top: 40px;
+     }
+ }
+ 
+ @media (max-width: 680px) {
+     .main_contents {
+         margin-left: 12%;
+         padding-top: 400px;
+     }
+     .slider_wrapper_photo {
+         width: 100%;
+         height: 500px;
+     }
+     .slider_container {
+         width: 90%;
+         margin: 0 auto;
+         margin-top: 10%;
+     }
+     .swiper-button-next.swiper-button-disabled,
+     .swiper-button-prev.swiper-button-disabled {
+         display: none;
+     }
+     .swiper-button-prev,
+     .swiper-rtl .swiper-button-next {
+         display: none;
+     }
+     .swiper-button-next,
+     .swiper-button-prev {
+         display: none !important;
+     }
+ }
+ 
+ @media (max-width: 450px) {
+     .main_contents {
+         margin-left: 12%;
+         padding-top: 350px;
+     }
+     .skils_contents {
+         display: block;
+         padding-top: 60px;
+         margin: 0 auto;
+         margin-left: 10%;
+     }
+     .skils hr {
+         height: 0px;
+     }
+     .skils_body {
+         margin-bottom: 30px;
+     }
+     .main_contents {
+         margin-left: 10%;
+         padding-top: 320px;
+     }
+     .contacts_block {
+         margin-left: 0%;
+     }
+     .contacts_block_tel {
+         margin: 0 auto;
+         width: 380px;
+         margin-top: 40px;
+     }
+     .contacts_block_up {
+         margin: 0 auto;
+         width: 160px;
+         margin-top: 40px;
+     }
+     .contacts_block_git {
+         margin: 0 auto;
+         width: 210px;
+         margin-top: 40px;
+     }
+     .slider_wrapper_photo {
+         width: 100%;
+         height: 250px;
+     }
+     .examples {
+         height: 500px;
+     }
+     @media (max-width: 420px) {
+         .skils_contents {
+             margin-left: 0%;
+         }
+         .contacts_block_tel {
+             margin: 0 auto;
+             width: 360px;
+             margin-top: 40px;
+         }
+         .contacts_block_up {
+             margin: 0 auto;
+             width: 220px;
+             margin-top: 40px;
+         }
+         .contacts_block_git {
+             margin: 0 auto;
+             width: 260px;
+             margin-top: 40px;
+         }
+         .main_contents {
+             margin-left: 5%;
+         }
+         .main_contents h1 {
+             font-weight: 900;
+             font-size: 55px;
+         }
+         .main_contents h2 {
+             font-weight: 900;
+             font-size: 55px;
+         }
+         .about {
+             height: 1000px;
+         }
+         .examples {
+             height: 500px;
+         }
+         .contacts {
+             height: 900px;
+         }
+     }
+ }
