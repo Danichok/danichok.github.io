@@ -392,3 +392,35 @@
                 margin-top: 40px;
             }
         }
+        
+        @media (max-width: 420px) {
+            .skils_contents {
+                margin-left: 0%;
+            }
+            .contacts_block_tel {
+                margin: 0 auto;
+                width: 425px;
+                margin-top: 40px;
+            }
+            .contacts_block_up {
+                margin: 0 auto;
+                width: 220px;
+                margin-top: 40px;
+            }
+            .contacts_block_git {
+                margin: 0 auto;
+                width: 260px;
+                margin-top: 40px;
+            }
+            .main_contents {
+                margin-left: 5%;
+            }
+            .main_contents h1 {
+                font-weight: 900;
+                font-size: 55px;
+            }
+            .main_contents h2 {
+                font-weight: 900;
+                font-size: 55px;
+            }
+        }
