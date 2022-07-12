@@ -80,7 +80,7 @@
      height: 100vh;
      z-index: 999;
      top: 0;
-     left: 17%;
+     left: 16%;
      background: #171717;
  }
  
@@ -140,7 +140,7 @@
  }
  
  .main_block_wrapper {
-     transition: 0.7s;
+     transition: 0.4s;
      transition-timing-function: cubic-bezier(1, 0.01, 0.31, 0.98);
  }
  
@@ -172,39 +172,49 @@
      display: flex;
      width: 70vw;
      margin: 0 auto;
-     margin-left: 20%;
-     padding-top: 100px;
+     margin-left: 22%;
+     padding-top: 140px;
  }
  
- .skils {
-     margin: 0 auto;
-     width: 350px;
+ .offer {
+     position: relative;
+     height: 100vh;
+     background-color: #1A1F25;
+ }
+ 
+ .offer_blocks {
+     display: flex;
+ }
+ 
+ .offer_block {
+     width: 20%;
+     height: 23vh;
      text-align: center;
+     align-items: center;
+     border-right: 2px solid #a8a8a8;
+     border-bottom: 2px solid #a8a8a8;
+     color: white;
  }
  
- .skils hr {
-     width: 6px;
-     height: 72px;
-     background: #00FFD8;
-     border: none;
+ .offer_block img {
+     margin-top: 50px;
+ }
+ 
+ .offer_block p {
+     width: 120px;
+     padding-top: 30px;
      margin: 0 auto;
-     margin-top: 25px;
-     margin-bottom: 25px;
+     font-weight: 900;
+     margin-left: 80px;
+     margin-right: 80px;
  }
  
- .skils_header {
-     width: 372px;
-     height: 68px;
-     background: #00FFD8;
-     font-weight: bold;
-     font-size: 36px;
-     color: black;
-     padding-top: 10px;
+ .cards_right_noborder {
+     border-right: none
  }
  
- .skils_body {
-     font-weight: bold;
-     font-size: 36px;
+ .cards_bottom_noborder {
+     border-bottom: none
  }
  
  .slider_block {

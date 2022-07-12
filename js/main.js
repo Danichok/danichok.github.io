@@ -4,6 +4,8 @@ $('.menu_contacts_icons').hover(function() {
 }, function() {
     $(this).find('img').attr('src', imagePath + '.svg')
 });
+
+
 var isActive = true
 var sliderCount = 0;
 var currentSlide = 0;
@@ -24,10 +26,10 @@ window.addEventListener("mousewheel", function(e) {
     }
 
 }, { passive: false });
+
+
 const swiper = new Swiper('.swiper', {
     // Optional parameters
-
-
 
     // If we need pagination
     pagination: {
@@ -90,7 +92,7 @@ function sliderLeft() {
         $('.slider_wrapper').attr('style', 'transform:translateX(-' + translateWidth + 'px)')
         return false
     } else {
-        //alert('SCAm')
+        alert('SCAm')
         var translateWidth = sliderWidth * (sliderCount - 1) // Ширина прокрута
         $('.slider_wrapper').attr('style', 'transform:translateX(-' + translateWidth + 'px)')
     }
@@ -113,7 +115,6 @@ function scrollDown() {
     } else if (currentSlide == 3) {
         $('.scroll_menu_point').attr('style', 'transform: translateY(2100%);');
     } else if (currentSlide == 4) {
-        $('.scroll_menu_point').attr('style', 'transform: translateY(0%);');
         currentSlide = 0;
     }
 
