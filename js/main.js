@@ -47,26 +47,7 @@ const swiper = new Swiper('.swiper', {
         el: '.swiper-scrollbar',
     },
 });
-$('.slider_button_left').click(function() {
-    var currentRotate = $('.slider_button_left').attr('style')
-    console.log(currentRotate)
-    if (currentRotate == 'transform: rotate(1turn);') {
-        $('.slider_button_left').attr('style', 'transform: rotate(0turn);')
-    } else {
-        $('.slider_button_left').attr('style', 'transform: rotate(1turn);')
-    }
-    sliderLeft()
-})
-$('.slider_button_right').click(function() {
-    var currentRotate = $('.slider_button_right').attr('style')
-    console.log(currentRotate)
-    if (currentRotate == 'transform: rotate(1turn);') {
-        $('.slider_button_right').attr('style', 'transform: rotate(0turn);')
-    } else {
-        $('.slider_button_right').attr('style', 'transform: rotate(1turn);')
-    }
-    sliderRight()
-})
+
 var sliderNumber = $('.slider_wrapper_photo').length // Визначення кількості слайдів
 var sliderWidth = $('.slider_wrapper_photo').width() // Ширина  слайда
 var sliderCount = 1
@@ -98,61 +79,7 @@ function sliderLeft() {
     }
 }
 
-function scrollDown() {
-    currentSlide = currentSlide + 1;
-    sliderCount++
 
-    if (sliderCount < 5) {
-        var sliderTranslate = (sliderCount - 1) * 100;
-        $('.main_block_wrapper').attr('style', 'transform:translateY(-' + sliderTranslate + 'vh)')
-    } else {
-        sliderCount = 0
-    }
-    if (currentSlide == 1) {
-        $('.scroll_menu_point').attr('style', 'transform: translateY(700%);');
-    } else if (currentSlide == 2) {
-        $('.scroll_menu_point').attr('style', 'transform: translateY(1400%);');
-    } else if (currentSlide == 3) {
-        $('.scroll_menu_point').attr('style', 'transform: translateY(2100%);');
-    } else if (currentSlide == 4) {
-        currentSlide = 0;
-    }
-
-    isActive = false;
-    setTimeout(() => {
-        isActive = true;
-    }, 800);
-}
-
-function scrollUp() {
-    currentSlide = currentSlide - 1;
-    sliderCount--
-    if (sliderCount < 5) {
-        var sliderTranslate = (sliderCount - 1) * 100;
-        $('.main_block_wrapper').attr('style', 'transform:translateY(-' + sliderTranslate + 'vh)')
-    } else {
-        sliderCount = 0
-    }
-    if (currentSlide == 0) {
-        $('.scroll_menu_point').attr('style', 'transform: translateY(0%);');
-
-    } else if (currentSlide == 1) {
-        $('.scroll_menu_point').attr('style', 'transform: translateY(700%);');
-
-    } else if (currentSlide == 2) {
-        $('.scroll_menu_point').attr('style', 'transform: translateY(1400%);');
-
-    } else if (currentSlide == 3) {
-        $('.scroll_menu_point').attr('style', 'transform: translateY(2100%);');
-        currentSlide = 0;
-    }
-
-    isActive = false;
-    setTimeout(() => {
-        isActive = true;
-    }, 800);
-
-}
 
 
 $('#home_menu').click(function() {
@@ -171,3 +98,21 @@ $('#contacts_menu').click(function() {
     $('.main_block_wrapper').attr('style', 'transform:translateY(-' + 300 + 'vh)')
     $('.scroll_menu_point').attr('style', 'transform: translateY(2100%);');
 })
+let offset = 0;
+const sliderLine = document.querySelector('.examples_blocks');
+
+document.querySelector('.slider_button_right').addEventListener('click', function() {
+    offset = offset + 400;
+    if (offset > 800) {
+        offset = 0;
+    }
+    sliderLine.style.left = -offset + 'px';
+});
+
+document.querySelector('.slider_button_left').addEventListener('click', function() {
+    offset = offset - 400;
+    if (offset < 0) {
+        offset = 800;
+    }
+    sliderLine.style.left = -offset + 'px';
+});
