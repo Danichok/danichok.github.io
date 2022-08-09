@@ -116,3 +116,23 @@ document.querySelector('.slider_button_left').addEventListener('click', function
     }
     sliderLine.style.left = -offset + 'px';
 });
+if ($(window).width() < 400) {
+    let offset = 0;
+    const sliderLine = document.querySelector('.examples_blocks');
+
+    document.querySelector('.slider_button_right').addEventListener('click', function() {
+        offset = offset + 400;
+        if (offset > 1620) {
+            offset = 0;
+        }
+        sliderLine.style.left = -offset + 'px';
+    });
+
+    document.querySelector('.slider_button_left').addEventListener('click', function() {
+        offset = offset - 400;
+        if (offset < 0) {
+            offset = 1620;
+        }
+        sliderLine.style.left = -offset + 'px';
+    });
+}
